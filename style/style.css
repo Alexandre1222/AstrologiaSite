@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Brusher";
+    src: url('Font/Brusher.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Bebas";
+    src: url('Font/BebasNeue-Regular.ttf') format('truetype');
+}
+body{
+    font-family: Bebas;
+    padding: 10px;
+    background: #f1f1f1;
+    
+}
+
+/*Inicio do estilo do cabeçalho e Barra de navegação*/
+
+header{
+    background-image: url("../img/CircleBackground.png");
+    background-repeat: no-repeat;
+    background-position:5% 50%;
+    background-size: none, cover;
+    padding: 50px;
+    text-align: left;   
+
+    /*background: rgba(248, 248, 248, 0.5);*/
+}
+header .titulo{
+    font-family: Brusher;
+    margin-left: 140px;
+    font-size: 40px;
+}
+header .titulo2{
+    font-family: Bebas;
+    margin-left: 200px;
+    margin-top: -10px;
+    transform: scaleY(3.5);
+    font-size: 30pt;
+}
+header .canto{
+    font-family: Brusher;
+    font-size: 22pt;
+    float: right;
+    margin: 0px;
+}
+#fundo{
+    background-image: url("../img/backgroundHeader.jpg");
+    background-color: rgba(0, 0, 0, 0.55);
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    height: 100%;
+    overflow: hidden;
+    background-color:rgba(206, 57, 174, 0.5);
+}
+nav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+/*Fim do estilo do cabeçalho e Barra de navegação*/
+
+section{
+    float: left;
+    width: 75%;
+}
+#rightSide{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+#fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+#card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+#row::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
